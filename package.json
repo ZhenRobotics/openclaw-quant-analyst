@@ -1,69 +1,54 @@
 {
-  "name": "openclaw-video",
-  "version": "1.0.0",
-  "description": "Automated video generation pipeline with OpenAI TTS, Whisper, and Remotion - from text script to professional short videos",
-  "main": "src/index.ts",
+  "name": "openclaw-quant-analyst",
+  "version": "0.1.0",
+  "description": "Professional quantitative trading system for cryptocurrency markets - backtesting, paper trading, live trading, and strategy optimization",
+  "main": "bin/cli.js",
   "bin": {
-    "openclaw-video": "./agents/video-cli.sh"
+    "openclaw-quant-analyst": "./bin/cli.js"
   },
-  "files": [
-    "src/",
-    "agents/",
-    "scripts/",
-    "public/",
-    "docs/",
-    "audio/example-timestamps.json",
-    "remotion.config.ts",
-    "tsconfig.json",
-    "README.md",
-    "LICENSE",
-    "QUICKSTART.md",
-    "generate-for-openclaw.sh"
-  ],
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion render",
-    "render": "remotion render Main out/video.mp4",
-    "prepublishOnly": "echo 'Publishing openclaw-video...'",
-    "postinstall": "echo 'Thanks for installing openclaw-video! Run: openclaw-video help'"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "echo 'Publishing openclaw-quant-analyst to npm...'"
   },
   "keywords": [
-    "video-generation",
-    "remotion",
-    "openai",
-    "tts",
-    "whisper",
-    "automation",
-    "video-editing",
-    "ai-video",
-    "openclaw",
-    "short-video",
-    "text-to-video"
+    "quantitative-trading",
+    "backtesting",
+    "cryptocurrency",
+    "trading-bot",
+    "algorithmic-trading",
+    "strategy-optimization",
+    "technical-analysis",
+    "quant",
+    "trading",
+    "bitcoin",
+    "ethereum",
+    "binance",
+    "okx"
   ],
-  "author": "justin",
+  "author": "ZhenStaff <contact@zhenrobotics.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZhenRobotics/openclaw-video.git"
+    "url": "git+https://github.com/ZhenRobotics/openclaw-quant-analyst.git"
   },
   "bugs": {
-    "url": "https://github.com/ZhenRobotics/openclaw-video/issues"
+    "url": "https://github.com/ZhenRobotics/openclaw-quant-analyst/issues"
   },
-  "homepage": "https://github.com/ZhenRobotics/openclaw-video#readme",
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "remotion": "^4.0.431"
-  },
-  "devDependencies": {
-    "@remotion/cli": "^4.0.431",
-    "@types/node": "^22.19.13",
-    "@types/react": "^19.0.6",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.21.0",
-    "typescript": "^5.7.3"
-  },
+  "homepage": "https://github.com/ZhenRobotics/openclaw-quant-analyst#readme",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/openclaw_quant/",
+    "examples/",
+    "quant-analyst/",
+    "README.md",
+    "LICENSE",
+    "QUICKSTART.md",
+    "requirements.txt"
+  ],
+  "peerDependencies": {
+    "python3": ">=3.9"
   }
 }
