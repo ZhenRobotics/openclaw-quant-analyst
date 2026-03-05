@@ -1,0 +1,59 @@
+# Node modules
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data
+data/
+*.csv
+*.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+venv/
+env/
+
+# Git
+.git/
+.gitignore
+
+# Project specific
+out/
+cache/
+backtest_results/
+
+# Documentation (already in files list)
+docs/
+
+# Legacy files
+audio/
+scripts/
+remotion.config.ts
+package-lock.json
+pnpm-lock.yaml
+*.md.bak

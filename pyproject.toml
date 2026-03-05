@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openclaw-quant-analyst"
+version = "0.1.0"
+description = "Professional quantitative trading system for cryptocurrency markets"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "ZhenStaff", email = "contact@zhenrobotics.com"}
+]
+keywords = [
+    "quantitative-trading",
+    "backtesting",
+    "cryptocurrency",
+    "trading-bot",
+    "algorithmic-trading",
+    "strategy-optimization",
+    "technical-analysis",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Developers",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/ZhenRobotics/openclaw-quant-analyst"
+Documentation = "https://github.com/ZhenRobotics/openclaw-quant-analyst#readme"
+Repository = "https://github.com/ZhenRobotics/openclaw-quant-analyst"
+"Bug Tracker" = "https://github.com/ZhenRobotics/openclaw-quant-analyst/issues"
+ClawHub = "https://clawhub.ai/ZhenStaff/quant-analyst"
+
+[project.scripts]
+openclaw-quant-analyst = "openclaw_quant.cli:main"

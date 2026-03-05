@@ -7,17 +7,17 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="openclaw-quant",
+    name="openclaw-quant-analyst",
     version="0.1.0",
     author="ZhenStaff",
     author_email="contact@zhenrobotics.com",
     description="Professional quantitative trading system for cryptocurrency markets",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ZhenRobotics/openclaw-quant",
+    url="https://github.com/ZhenRobotics/openclaw-quant-analyst",
     project_urls={
-        "Bug Tracker": "https://github.com/ZhenRobotics/openclaw-quant/issues",
-        "ClawHub": "https://clawhub.ai/ZhenStaff/openclaw-quant",
+        "Bug Tracker": "https://github.com/ZhenRobotics/openclaw-quant-analyst/issues",
+        "ClawHub": "https://clawhub.ai/ZhenStaff/quant-analyst",
     },
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -38,7 +38,7 @@ setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "openclaw-quant=openclaw_quant.cli:main",
+            "openclaw-quant-analyst=openclaw_quant.cli:main",
         ],
     },
     keywords=[
